@@ -1,0 +1,119 @@
+/* -------------------------------------------------------------------------- */
+/* Tiny Rotary -------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.tiny-rotary {
+	position: relative;
+	overflow: hidden;
+}
+	.tiny-rotary .window {
+		position: relative;
+		overflow: hidden;
+	}
+	.tiny-rotary .tray {
+		position: relative;
+			overflow: hidden;
+	}
+	.tiny-rotary .item {
+		float: left;
+		width: 196px;
+		height: 90px;
+			overflow: hidden;
+		background: #CCC;
+		color: #000;
+		font: 2em Arial;
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+		        border-radius: 5px;
+		margin: 0 2px;
+	}
+	.tiny-rotary .tall {
+		height: 200px;
+	}
+
+.tiny-rotary-nav {
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
+	padding: 25px 0 0 0;
+	margin: 0;
+}
+	.tiny-rotary-nav li {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+			overflow: hidden;
+		background: #CCC;
+		line-height: 18px;
+		text-align: center;
+		padding: 3px;
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+		        border-radius: 5px;
+		margin: 0 2px;
+		cursor: pointer;
+	}
+		.tiny-rotary-nav a {
+			color: #444;
+			text-decoration: none;
+		}
+			.tiny-rotary-nav li:hover,
+			.tiny-rotary-nav .active,
+			.tiny-rotary-nav .active a {
+				background: #D86000;
+				color: #FFF;
+			}
+			.tiny-rotary-nav li:hover,
+			.tiny-rotary-nav li:hover a {
+				background: #AD4D00;
+				color: #FFF;
+			}
+/* -------------------------------------------------------------------------- */
+/* Extra embellishment for default files ------------------------------------ */
+/* -------------------------------------------------------------------------- */
+body,html {background: #CCC; padding: 0; margin: 0;}
+body {font: 62.5% Arial;}
+#container {width: 855px; background: #FFF; padding: 50px 0 0; margin: 0 auto;}
+.tiny-rotary {
+	padding: 0 0 50px;
+}
+	.tiny-rotary .window {
+		margin: 0 auto;
+	}
+	.tiny-rotary .tray {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.tiny-rotary .prev,
+	.tiny-rotary .next {
+		position: absolute;
+			top: 0;
+		display: block;
+		width: 50px;
+		height: 90px;
+		background: #D86000;
+		color: #FFF;
+		font: bold 3em/85px Arial;
+		text-align: center;
+		text-decoration: none;
+	}
+	.tiny-rotary .prev {
+		left: 0;
+		-webkit-border-radius: 0 5px 5px 0;
+		   -moz-border-radius: 0 5px 5px 0;
+		        border-radius: 0 5px 5px 0;
+	}
+	.tiny-rotary .next {
+		right: 0;
+		-webkit-border-radius: 5px 0 0 5px;
+		   -moz-border-radius: 5px 0 0 5px;
+		        border-radius: 5px 0 0 5px;
+	}
+		.tiny-rotary .prev:hover,
+		.tiny-rotary .next:hover {
+			background: #AD4D00;
+		}
+
+.red {
+	background:red !important;
+}

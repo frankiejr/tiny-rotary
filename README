@@ -1,0 +1,3 @@
+Known Limitations
+1. Using margins on measured in percentages will not work
+2. Multiplier can't be more than half the number of tiles
